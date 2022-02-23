@@ -273,6 +273,10 @@ PrefabInstance:
       propertyPath: damageEffect
       value: 
       objectReference: {fileID: 631301196}
+    - target: {fileID: 870794258986812361, guid: 83df4009a06ad0049a64e178518be6dc, type: 3}
+      propertyPath: m_Color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2340262913561782434, guid: 83df4009a06ad0049a64e178518be6dc, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -369,7 +373,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 286391497, guid: ba11609f2235c4e4f9a5a94cace96335, type: 3}
   m_PrefabInstance: {fileID: 7738996772779056625}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7738996772779056626}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edbb6b29b5d9583478e03e2cb72868c5, type: 3}
@@ -484,6 +488,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a60ede480e7945218813a8f8a236310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &463761312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2259397806264782595, guid: 83df4009a06ad0049a64e178518be6dc, type: 3}
+  m_PrefabInstance: {fileID: 5406124644526410294}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &463761318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463761312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01239f5953bddf448760a6a8f14b3d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterComponent: {fileID: 0}
 --- !u!1 &503048373
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +724,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000011765245650, guid: 9732a241b7bd0fa4a8e59553d6d8a2b0, type: 3}
   m_PrefabInstance: {fileID: 565108011}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &567590862 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2259397806264782595, guid: 83df4009a06ad0049a64e178518be6dc, type: 3}
+  m_PrefabInstance: {fileID: 103621134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &567590868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567590862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01239f5953bddf448760a6a8f14b3d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterComponent: {fileID: 0}
 --- !u!1 &631301196 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1250507045210962, guid: 3fe0df07025a3e747855b1bb671fc04e, type: 3}
@@ -2560,8 +2600,9 @@ MonoBehaviour:
   enemyCharacters:
   - {fileID: 1252921196}
   - {fileID: 103621141}
-  IsMoving: 0
-  targetPos: {x: 0, y: 5, z: 0}
+  _animDamage:
+  - {fileID: 567590868}
+  - {fileID: 463761318}
 --- !u!1001 &5406124644526410294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2573,6 +2614,14 @@ PrefabInstance:
       propertyPath: _weapon
       value: 
       objectReference: {fileID: 11400000, guid: 404c3d5b6fb7c614fba8efd79ad74ada, type: 2}
+    - target: {fileID: 870794258986812361, guid: 83df4009a06ad0049a64e178518be6dc, type: 3}
+      propertyPath: m_Color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1367575312544406262, guid: 83df4009a06ad0049a64e178518be6dc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4382939442968886894, guid: 83df4009a06ad0049a64e178518be6dc, type: 3}
       propertyPath: m_Type
       value: 3
@@ -2806,3 +2855,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba11609f2235c4e4f9a5a94cace96335, type: 3}
+--- !u!1 &7738996772779056626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3313426551164327183, guid: ba11609f2235c4e4f9a5a94cace96335, type: 3}
+  m_PrefabInstance: {fileID: 7738996772779056625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &7738996772779056627
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738996772779056626}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 27f728a301f3e2c41b86c25e2a862794, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
